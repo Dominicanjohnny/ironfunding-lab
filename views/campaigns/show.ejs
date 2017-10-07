@@ -1,0 +1,6 @@
+<!-- views/campaigns/show.ejs -->
+<% if (campaignIsCurrentUsers) { %>
+  <a class="btn backer-btn" href="/campaigns/<%= campaign._id%>/edit">Edit This Project</a>
+<% } else { %>
+  <a class="btn backer-btn" href="#">Back This Project</a>
+<% } %>
